@@ -483,9 +483,28 @@ ul { list-style: none; }
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
   flex-shrink: 0;
+  object-fit: contain;
+  display: block;
 }
 
-.intern-item::before {
+.intern-logo--wide {
+  width: auto;
+  height: 44px;
+  min-width: 92px;
+  padding: 6px 14px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intern-logo--wide img {
+  width: auto;
+  height: 100%;
+  display: block;
+}
+
+.intern-item--newest::before {
   content: "最新经历";
   display: inline-block;
   position: absolute;
