@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="李洛克 — 北京大学基础医学八年制学生，科研实习、数据分析与内容创作者的个人网站。">
+  <title>李洛克 | 北京大学 · 基础医学</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== 导航栏 ===== -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container">
+      <a href="#hero" class="nav-brand">
+        <img class="pku-logo" src="assets/pku-logo.svg" alt="北京大学校徽">
+        李洛克<span class="brand-dot">.</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">关于我</a></li>
+        <li><a href="#education" class="nav-link">教育经历</a></li>
+        <li><a href="#internship" class="nav-link">实习经历</a></li>
+        <li><a href="#research" class="nav-link">科研经历</a></li>
+        <li><a href="#experience" class="nav-link">在校经历</a></li>
+        <li><a href="#skills" class="nav-link">技能</a></li>
+        <li><a href="#portfolio" class="nav-link">作品集</a></li>
+        <li><a href="#contact" class="nav-link">联系方式</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <span class="blob blob-1"></span>
+      <span class="blob blob-2"></span>
+      <span class="blob blob-3"></span>
+      <canvas id="dnaCanvas" aria-hidden="true"></canvas>
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <img class="hero-logo" src="assets/pku-logo.svg" alt="北京大学校徽">
+          <p class="hero-tag">北京大学 · 基础医学八年制 · 2024级</p>
+          <h1 class="hero-name">李洛克</h1>
+          <p class="hero-sub">
+            医学生 × 科研实习生 × 内容创作者<br>
+            —— 用严谨的医学训练与敏锐的用户视角，探索健康内容的科学传播。
+          </p>
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn btn-primary">查看作品集</a>
+            <a href="#contact" class="btn btn-ghost">联系我</a>
+          </div>
+        </div>
+        <div class="hero-portrait">
+          <div class="portrait-frame">
+            <img src="图片.png" alt="李洛克个人照片">
+            <span class="portrait-glow" aria-hidden="true"></span>
+            <span class="portrait-ring" aria-hidden="true"></span>
+          </div>
+          <span class="portrait-badge badge-main">北京大学 · 基础医学八年制</span>
+          <span class="portrait-badge badge-sub">科研 × 数据分析 × 内容创作</span>
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">2</span>
+          <span class="stat-label">科研项目</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">120+</span>
+          <span class="stat-label">支教学生</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">15000+</span>
+          <span class="stat-label">自媒体浏览量</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">IF 6.7</span>
+          <span class="stat-label">合作文献</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- ===== 关于我 ===== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">ABOUT ME</span>
+          <h2 class="section-title">关于我</h2>
+          <div class="section-line"></div>
+        </div>
+        <p class="about-intro reveal">
+          我是一名北京大学基础医学八年制2024级学生，具备扎实的医学基础知识与科研训练，同时在数据分析、用户研究和项目执行方面积累了丰富的实践经验。
+        </p>
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <div class="about-icon">🧬</div>
+            <h3>医学背景与科研训练</h3>
+            <p>通过系统的医学课程学习与实验室科研经历（王韵实验室 Meta 分析、FRMD5 蛋白功能研究），不仅掌握了医学基础知识，更培养了严谨的逻辑思维与数据敏感度，能够从专业角度理解健康内容、识别信息的科学性与严谨性。</p>
+          </div>
+          <div class="about-card reveal">
+            <div class="about-icon">📊</div>
+            <h3>数据分析与评估能力</h3>
+            <p>熟练掌握 R 语言、Linux 环境及生物信息学分析流程，具备数据处理、统计分析与可视化的实操能力。在 Meta 分析项目中独立完成数据提取与初步分析，积累了从文献筛选到数据解读的完整评估经验。</p>
+          </div>
+          <div class="about-card reveal">
+            <div class="about-icon">👀</div>
+            <h3>用户视角与内容洞察</h3>
+            <p>作为小红书 / B 站博主，长期从创作者和用户双重视角观察内容平台，积累了对用户行为理解与内容传播的丰富经验；在支教项目中负责多平台数据收集与传播效果分析，能够还原真实使用场景、识别体验痛点并提出优化建议。</p>
+          </div>
+          <div class="about-card reveal">
+            <div class="about-icon">🤝</div>
+            <h3>沟通协作与执行力</h3>
+            <p>担任外联部副部长期间，统筹千人活动、负责宣传内容与商家谈判，锻炼了高效沟通与多任务协调能力。科研项目中的团队协作与汇报经历，让我习惯于与多方对齐结论、推进任务落地，能够独立撰写报告并适应高强度工作。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 教育经历 ===== -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">EDUCATION</span>
+          <h2 class="section-title">教育经历</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="edu-card reveal">
+          <img class="edu-logo" src="assets/pku-logo.svg" alt="北京大学校徽">
+          <div class="edu-body">
+            <div class="edu-row">
+              <h3>北京大学 · 基础医学院</h3>
+              <span class="edu-time">2024.08 — 至今</span>
+            </div>
+            <p class="edu-major">基础医学 · 八年制（本博连读）｜ 2024级</p>
+            <p class="edu-detail">
+              <strong>主修课程：</strong>人体形态功能总论、医学分子细胞遗传基础、运动系统、神经系统、循环系统、有机化学、普通物理、普通化学、高等数学、计算概论
+            </p>
+            <p class="edu-detail">
+              <strong>主修内容及技能培养：</strong>基础医学领域的理论知识建构，包括人体结构与功能的基本原理；通过化学和物理课程培养了扎实的实验设计与数据分析能力；数学和计算课程提升了量化建模和编程基础技能。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 实习经历 ===== -->
+    <section class="section" id="internship">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">INTERNSHIP</span>
+          <h2 class="section-title">实习经历</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="exp-item intern-item reveal">
+          <div class="exp-head">
+            <div class="exp-title">
+              <img class="intern-logo" src="assets/axx-logo.png" alt="爱学习教育集团">
+              <div class="exp-title-text">
+                <h3>北京爱学习博乐教育科技有限公司</h3>
+                <span class="exp-role">产品实习生</span>
+              </div>
+            </div>
+            <span class="exp-time">2026.06 — 2026.08</span>
+          </div>
+          <p class="intern-project">项目：AI 视频生产与预检体系搭建 —— 用 AI 重构高中课程视频的生产链路，让质量审查从「事后兜底」前移为「过程守门」。</p>
+          <ul class="exp-list">
+            <li>独立负责「双层预检」体系的方案设计与落地：脚本层预检 + 成片层预检，并将其嵌入 AI 视频生产流程，在脚本写完后与成片产出后分别介入把关，保证批量生产时质量不失控；</li>
+            <li>搭建并迭代脚本层 / 成片层预检 agent，审查维度覆盖知识点准确性、讲解逻辑连贯性、口语化与互动设计、画面规范、语音表现、片段衔接等，将质检标准从人工经验转化为可自动执行的规则；</li>
+            <li>通过「跑视频 — 对照教研反馈 — 提炼错误原因」的半自动迭代方式，把资深教研的隐性经验沉淀为显性化规则，产出可复用的《视频生产 SOP 文档》与《双层预检规范文档》；</li>
+            <li>产出 5-7 段经双层预检通过的成品 AI 视频（单段 5-10 分钟），并完成陌生样本盲测与对抗式复现验证，检验预检体系的准确性、客观性与可泛化性。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 科研经历 ===== -->
+    <section class="section" id="research">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">RESEARCH</span>
+          <h2 class="section-title">科研经历</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="research-lab reveal">
+          <span class="lab-icon">🔬</span>
+          <div>
+            <h3>北京大学神经科学研究所 · 王韵实验室</h3>
+            <p class="lab-role">科研实习</p>
+          </div>
+          <span class="lab-time">2024.08 — 至今</span>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <h4>骨骼肌疼痛与认知功能关系的 Meta 分析</h4>
+              <ul>
+                <li>独立完成大规模文献的检索与筛选，系统整理不同研究的实验设计与结论，负责数据提取与初步统计分析；</li>
+                <li>实地参与团队真实世界数据采集、问卷调查工作；</li>
+                <li>作为共同作者的文献成果进入同行评议阶段，<strong>IF = 6.7</strong>。</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-marker"></div>
+            <div class="timeline-card">
+              <h4>FRMD5 蛋白在大脑发育中对神经元迁移的作用研究</h4>
+              <ul>
+                <li>参与研究型实验，包括分子克隆、PCR、细胞培养等关键湿实验操作；</li>
+                <li>承担转录组数据的预处理与差异分析，使用 R 和 Linux 完成生物信息学分析流程；</li>
+                <li>协助整理实验数据与图表，参与课题进展汇报与组会讨论。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 在校经历 / 项目经历 ===== -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">EXPERIENCE</span>
+          <h2 class="section-title">在校与项目经历</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-head">
+            <div class="exp-title">
+              <h3>北京大学医学部基础医学院外联部</h3>
+              <span class="exp-role">副部长</span>
+            </div>
+            <span class="exp-time">2024.08 — 至今</span>
+          </div>
+          <ul class="exp-list">
+            <li>主要负责外联部活动的宣传内容撰写与视觉设计，微信公众号推送阅读量每篇平均 <strong>700+</strong>，显著提升活动影响力；</li>
+            <li>负责校级大型活动的筹备与执行，成功组织<strong>千人元旦晚会</strong>，协调演职人员与参与人员流程，保障活动顺利进行；</li>
+            <li>负责学院学生教材、正装团购活动，与商家沟通协调产品清单与优惠，总团购金额达到 <strong>20000 元以上</strong>；</li>
+            <li>负责日常例会筹备与组织，协调外联部全体成员时间安排，提高部门运行效率。</li>
+          </ul>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-head">
+            <div class="exp-title">
+              <h3>西门子爱绿教育计划 · 高淳花山村暑期支教项目</h3>
+              <span class="exp-role">音乐理论 &amp; 影像环保教师</span>
+            </div>
+            <span class="exp-time">2025.07 — 2025.08</span>
+          </div>
+          <ul class="exp-list">
+            <li>参与暑期公益支教项目，独立负责 <strong>音乐理论</strong> 与 <strong>影像环保</strong> 两类课程的准备与授课，共计教授学生 <strong>120+ 名</strong>；</li>
+            <li>负责课程项目填报及合规性文档撰写，确保支教材料完整规范，符合申报项目要求；</li>
+            <li>主导社交媒体平台数据收集与整理，覆盖小红书、微信公众号、B 站、微博等多平台。</li>
+          </ul>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-head">
+            <div class="exp-title">
+              <h3>个人自媒体账号</h3>
+              <span class="exp-role">博主（小红书 / B 站）</span>
+            </div>
+            <span class="exp-time">2024.06 — 至今</span>
+          </div>
+          <ul class="exp-list">
+            <li>在小红书平台发布音乐、摄影、搞笑相关内容，总浏览量达到 <strong>15000+</strong>，互动达到 <strong>700+</strong>；</li>
+            <li>在 Bilibili 平台发布原创音乐内容，账号发布三个稿件，总播放量达到 <strong>3000+</strong>。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 技能 ===== -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">SKILLS</span>
+          <h2 class="section-title">相关技能</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon">💻</div>
+            <h3>编程与数据分析</h3>
+            <ul>
+              <li>熟练掌握 <strong>R 语言</strong>：数据分析与可视化</li>
+              <li>熟练操作 <strong>Linux</strong> 环境</li>
+              <li>具备 <strong>C 语言</strong> 编程基础</li>
+              <li>可独立完成数据处理与可视化</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">🎬</div>
+            <h3>计算机应用与创作</h3>
+            <ul>
+              <li>熟练使用 <strong>Microsoft Office</strong> 办公套件</li>
+              <li>掌握 <strong>Pr、Ae</strong> 视频剪辑与特效处理</li>
+              <li>掌握 <strong>Au</strong> 音频编辑与优化</li>
+            </ul>
+          </div>
+          <div class="skill-card reveal">
+            <div class="skill-icon">📖</div>
+            <h3>语言能力</h3>
+            <ul>
+              <li>大学英语四级（<strong>CET-4</strong>）504 分</li>
+              <li>具备较强的英文文献阅读与总结能力</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 作品集 ===== -->
+    <section class="section section-alt" id="portfolio">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">PORTFOLIO</span>
+          <h2 class="section-title">作品集</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <h3 class="portfolio-cat reveal">🎥 视频作品</h3>
+        <div class="portfolio-grid">
+          <a class="work-card reveal" href="https://www.bilibili.com/video/BV1aYQEBPEsH/" target="_blank" rel="noopener">
+            <div class="work-thumb work-thumb-1"><span class="work-play">▶</span></div>
+            <div class="work-body">
+              <span class="work-platform">Bilibili</span>
+              <h4>音乐 PV 空镜混剪</h4>
+              <p>原创音乐 PV 空镜混剪作品</p>
+            </div>
+          </a>
+          <a class="work-card reveal" href="https://www.bilibili.com/video/BV1BGvpBjE1M/" target="_blank" rel="noopener">
+            <div class="work-thumb work-thumb-2"><span class="work-play">▶</span></div>
+            <div class="work-body">
+              <span class="work-platform">Bilibili</span>
+              <h4>音乐 PV 剪辑作品</h4>
+              <p>原创音乐 PV 剪辑作品</p>
+            </div>
+          </a>
+          <a class="work-card reveal" href="https://www.bilibili.com/video/BV1dB4y197BG/" target="_blank" rel="noopener">
+            <div class="work-thumb work-thumb-3"><span class="work-play">▶</span></div>
+            <div class="work-body">
+              <span class="work-platform">Bilibili</span>
+              <h4>影视混剪视频作品</h4>
+              <p>影视混剪视频作品</p>
+            </div>
+          </a>
+          <a class="work-card reveal" href="https://www.xiaohongshu.com/discovery/item/67b7585a000000002602cdc3" target="_blank" rel="noopener">
+            <div class="work-thumb work-thumb-4"><span class="work-play">▶</span></div>
+            <div class="work-body">
+              <span class="work-platform">小红书</span>
+              <h4>旅游搞笑 vlog 混剪</h4>
+              <p>旅游搞笑 vlog 混剪视频</p>
+            </div>
+          </a>
+        </div>
+
+        <h3 class="portfolio-cat reveal">✍️ 公众号与小红书笔记</h3>
+        <div class="portfolio-grid">
+          <a class="work-card reveal" href="https://www.xiaohongshu.com/discovery/item/69ab1005000000000e03c011" target="_blank" rel="noopener">
+            <div class="work-thumb work-thumb-5"><span class="work-doc">文</span></div>
+            <div class="work-body">
+              <span class="work-platform">小红书</span>
+              <h4>医学求职图文内容笔记</h4>
+              <p>医学求职方向图文内容笔记</p>
+            </div>
+          </a>
+          <a class="work-card reveal" href="https://mp.weixin.qq.com/s/5MlDY3xLElXvQqvddurLVA" target="_blank" rel="noopener">
+            <div class="work-thumb work-thumb-6"><span class="work-doc">文</span></div>
+            <div class="work-body">
+              <span class="work-platform">微信公众号</span>
+              <h4>公众号作品 一</h4>
+              <p>原创公众号图文推送</p>
+            </div>
+          </a>
+          <a class="work-card reveal" href="https://mp.weixin.qq.com/s/ER1-wQ-rhBnDQbyrIbZMuA" target="_blank" rel="noopener">
+            <div class="work-thumb work-thumb-6"><span class="work-doc">文</span></div>
+            <div class="work-body">
+              <span class="work-platform">微信公众号</span>
+              <h4>公众号作品 二</h4>
+              <p>原创公众号图文推送</p>
+            </div>
+          </a>
+          <a class="work-card reveal" href="https://mp.weixin.qq.com/s/Q0cdRDhsfLPPQNcAnNeIug" target="_blank" rel="noopener">
+            <div class="work-thumb work-thumb-6"><span class="work-doc">文</span></div>
+            <div class="work-body">
+              <span class="work-platform">微信公众号</span>
+              <h4>公众号作品 三</h4>
+              <p>原创公众号图文推送</p>
+            </div>
+          </a>
+          <a class="work-card reveal" href="https://mp.weixin.qq.com/s/xYNNCvUuulX-o0HqxK7ogA" target="_blank" rel="noopener">
+            <div class="work-thumb work-thumb-6"><span class="work-doc">文</span></div>
+            <div class="work-body">
+              <span class="work-platform">微信公众号</span>
+              <h4>公众号作品 四</h4>
+              <p>原创公众号图文推送</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 联系方式 ===== -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-eyebrow">CONTACT</span>
+          <h2 class="section-title">联系方式</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="contact-card reveal">
+          <p class="contact-note">感谢您花时间了解我，期待与您的交流与合作。</p>
+          <div class="contact-items">
+            <a class="contact-item" href="tel:13691539020">
+              <span class="contact-ico">📞</span>
+              <div>
+                <span class="contact-label">电话</span>
+                <span class="contact-value">13691539020</span>
+              </div>
+            </a>
+            <a class="contact-item" href="mailto:2410305314@stu.pku.edu.cn">
+              <span class="contact-ico">✉️</span>
+              <div>
+                <span class="contact-label">邮箱</span>
+                <span class="contact-value contact-value--email">2410305314@stu.pku.edu.cn</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== 页脚 ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">
+        <img class="footer-logo" src="assets/pku-logo-light.svg" alt="北京大学校徽">
+        <span>© <span id="year">2025</span> 李洛克 · 北京大学基础医学院</span>
+      </p>
+      <p class="footer-quote">以科学严谨求真，以内容传递温度。</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
