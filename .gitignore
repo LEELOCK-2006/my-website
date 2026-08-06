@@ -1,0 +1,13 @@
+# 本地工具与配置（不需要部署）
+.reasonix/
+reasonix.toml
+
+# 简历素材文件夹（网页只需 index.html + css/js/assets/图片.png）
+简历/
+实习经历/
+
+# 系统与临时文件
+.DS_Store
+Thumbs.db
+*.log
+tmp/
